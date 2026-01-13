@@ -1,0 +1,24 @@
+<?php
+require_once __DIR__ . '/../config/conexion.php';
+
+class AlumnoModelo
+{
+    public function obtenerTodos()
+    {
+        try {
+            $conexion = new Conexion();
+            $conn = $conexion->conectar();
+
+            $sql = "SELECT id, usuario 
+                    FROM usuarios 
+                    WHERE usuario = :usuario AND clave = :clave";
+
+            $stmt = $conn->query($sql);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        } catch (PDOException $e) {
+            error_log("Error en AlumnoModelo->obtenerTodos - " . $e->getMessage());
+            return false;
+        }
+    }
+}

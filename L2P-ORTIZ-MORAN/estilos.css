@@ -1,0 +1,93 @@
+body {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 50px 40px; 
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+h1 {
+    color: #3cb3a0;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #eee;
+    width: 60px;
+    margin: 20px auto 30px auto;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input[type="email"] {
+    border: 1.5px solid #3cb3a0;
+}
+
+.input-group input[type="password"] {
+    border: 1.5px solid #ddd;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 5px rgba(60, 179, 160, 0.2);
+}
+
+.btn-login {
+    background-color: #3cb3a0;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #2e8b7d;
+}
